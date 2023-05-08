@@ -24,56 +24,56 @@ import React from "react";
 import { Menu } from "react-sidemenubar";
 
 function App() {
-  const data = [{ title: "Home" }];
+  const data = [
+    {
+      title: "Home",
+      section: true,
+    },
+    {
+      icon: <img src="home.png" alt="home" />,
+      title: "Home",
+      submenus: [
+        {
+          title: "Dashboard 1",
+          onClick: (e) => {
+            alert("home1");
+          },
+        },
+        {
+          title: "Dashboard 2",
+          onClick: (e) => {
+            alert("home2");
+          },
+        },
+        {
+          title: "Dashboard 3",
+          onClick: (e) => {
+            alert("home3");
+          },
+        },
+      ],
+    },
+    {
+      title: "Auth",
+      section: true,
+    },
+    {
+      icon: <img src="login.png" alt="home" />,
+      title: "Login",
+    },
+    {
+      icon: <img src="register.png" alt="home" />,
+      title: "Register",
+    },
+    {
+      icon: <img src="logout.png" alt="home" />,
+      title: "Logout",
+    },
+  ];
 
   return (
     <Menu
-      menus={[
-        {
-          title: "Home",
-          section: true,
-        },
-        {
-          icon: <FaHome />,
-          title: "Home",
-          submenus: [
-            {
-              title: "Dashboard 1",
-              onClick: (e) => {
-                alert("home1");
-              },
-            },
-            {
-              title: "Dashboard 2",
-              onClick: (e) => {
-                alert("home2");
-              },
-            },
-            {
-              title: "Dashboard 3",
-              onClick: (e) => {
-                alert("home3");
-              },
-            },
-          ],
-        },
-        {
-          title: "Auth",
-          section: true,
-        },
-        {
-          icon: <FaSignInAlt />,
-          title: "Login",
-        },
-        {
-          icon: <FaUserCheck />,
-          title: "Register",
-        },
-        {
-          icon: <FaSignOutAlt />,
-          title: "Logout",
-        },
-      ]}
+      menus={data}
       bg="transparent"
       activeBg="linear-gradient(45deg, #204520, #74b474)"
       color="black"
@@ -85,9 +85,9 @@ function App() {
 }
 ```
 
-<img src="https://raw.githubusercontent.com/venkatmcajj/react-sidemenubar/master/src/example.png" alt="Desktop">
+<img src="https://raw.githubusercontent.com/venkatmcajj/react-sidemenubar/master/example/src/example.png" alt="Desktop">
 
-<img src="https://raw.githubusercontent.com/venkatmcajj/react-sidemenubar/master/src/examplemobile.png" alt="Mobile">
+<img src="https://raw.githubusercontent.com/venkatmcajj/react-sidemenubar/master/example/src/examplemobile.png" alt="Mobile">
 
 ## The properties
 
