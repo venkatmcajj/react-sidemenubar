@@ -3,7 +3,6 @@ import "./app.css";
 import { Menu, Toggle } from "react-sidemenubar";
 import { FaHome, FaSignInAlt, FaSignOutAlt, FaUserCheck } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-const Menus = [];
 export default function App() {
   const [menuToggled, setMenuToggled] = useState(false);
   const navigate = useNavigate();
@@ -29,7 +28,7 @@ export default function App() {
               backgroundColor: "red",
               color: "white",
             }}
-            onClick={(e) => {
+            onClick={() => {
               setMenuToggled(!menuToggled);
             }}
           >
@@ -57,13 +56,13 @@ export default function App() {
               },
               {
                 title: "Dashboard 2",
-                onClick: (e) => {
+                onClick: () => {
                   navigate("/home2");
                 },
               },
               {
                 title: "Dashboard 3",
-                onClick: (e) => {
+                onClick: () => {
                   navigate("/home3");
                 },
               },
