@@ -7,6 +7,9 @@ React-sidemenubar allows you to create a responsive sidebar with easy to customi
 ```
 $ npm install --save react-sidemenubar
 $ yarn add react-sidemenubar
+
+$ import { Menu, Toggle } from "react-sidemenubar";
+
 ```
 
 ## Features
@@ -14,6 +17,7 @@ $ yarn add react-sidemenubar
 - Easy to set up for real, you can make it work in less than 1minute!
 - Super easy to customize
 - Has `onClick` hooks. Can pass onclick event when user interact.
+- `Toggle` function allows you to toggle the sidemenu from open to close and close to open.
 - And much more !
 
 ## The gist
@@ -21,7 +25,7 @@ $ yarn add react-sidemenubar
 ```jsx
 import React from "react";
 
-import { Menu } from "react-sidemenubar";
+import { Menu, Toggle } from "react-sidemenubar";
 
 function App() {
   const data = [
@@ -72,15 +76,24 @@ function App() {
   ];
 
   return (
-    <Menu
-      menus={data}
-      bg="transparent"
-      activeBg="linear-gradient(45deg, #204520, #74b474)"
-      color="black"
-      activeColor="white"
-      menubg="#efefef"
-      menuborder={5}
-    />
+    <div>
+      <button
+        onClick={() => {
+          Toggle();
+        }}
+      >
+        Toggle
+      </button>
+      <Menu
+        menus={data}
+        bg="transparent"
+        activeBg="linear-gradient(45deg, #204520, #74b474)"
+        color="black"
+        activeColor="white"
+        menubg="#efefef"
+        menuborder={5}
+      />
+    </div>
   );
 }
 ```
