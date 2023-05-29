@@ -12,24 +12,29 @@ const Menu = ({
   menubg,
   menuborder,
 }: Menus) => {
-  const ele = document.documentElement;
   useEffect(() => {
-    ele.style.setProperty('--activeColor', activeColor);
-  }, [activeColor])
+    const ele = document.documentElement;
+    ele.style.setProperty("--activeColor", activeColor);
+  }, [activeColor]);
   useEffect(() => {
-    ele.style.setProperty('--bg', bg);
-  }, [bg])
+    const ele = document.documentElement;
+    ele.style.setProperty("--bg", bg);
+  }, [bg]);
   useEffect(() => {
-    ele.style.setProperty('--activeBg', activeBg);
-  }, [activeBg])
+    const ele = document.documentElement;
+    ele.style.setProperty("--activeBg", activeBg);
+  }, [activeBg]);
   useEffect(() => {
-    ele.style.setProperty('--color', color);
-  }, [color])
+    const ele = document.documentElement;
+    ele.style.setProperty("--color", color);
+  }, [color]);
   useEffect(() => {
-    ele.style.setProperty('--menubg', menubg);
-  }, [menubg])
+    const ele = document.documentElement;
+    ele.style.setProperty("--menubg", menubg);
+  }, [menubg]);
   useEffect(() => {
-    ele.style.setProperty('--menuborder', `${menuborder}px`);
+    const ele = document.documentElement;
+    ele.style.setProperty("--menuborder", `${menuborder}px`);
   }, [menuborder]);
   return (
     <>
