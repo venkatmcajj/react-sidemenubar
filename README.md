@@ -8,7 +8,8 @@ React-sidemenubar allows you to create a responsive sidebar with easy to customi
 $ npm install --save react-sidemenubar
 $ yarn add react-sidemenubar
 
-$ import { Menu, Toggle } from "react-sidemenubar";
+import { Menu, Toggle } from "react-sidemenubar";
+import "react-sidemenubar/dist/react-sidemenubar.css";
 
 ```
 
@@ -26,6 +27,7 @@ $ import { Menu, Toggle } from "react-sidemenubar";
 import React from "react";
 
 import { Menu, Toggle } from "react-sidemenubar";
+import "react-sidemenubar/dist/react-sidemenubar.css";
 
 function App() {
   const data = [
@@ -133,6 +135,11 @@ Properties used to customise the rendering:
 ## Contribute
 
 Show your ❤️ and support by giving a ⭐. Any suggestions are welcome! venkatmcajj@gmail.com
+
+
+## Financial Contributors
+
+Become a financial contributor and help us sustain our community. [Contribute](https://opencollective.com/react-sidemenubar) 
 
 ## License
 

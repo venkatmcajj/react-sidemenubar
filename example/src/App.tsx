@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./app.css";
 import { Menu, Toggle } from "react-sidemenubar";
+import "react-sidemenubar/dist/react-sidemenubar.css";
 import { FaHome, FaSignInAlt, FaSignOutAlt, FaUserCheck } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 export default function App() {
